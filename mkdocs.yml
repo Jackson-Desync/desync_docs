@@ -49,9 +49,6 @@ extra:
     - python
   custom_dir: overrides  # Enables custom navbar button
 
-# Custom 404 page
-not_found_page: 404.md
-
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.extra
