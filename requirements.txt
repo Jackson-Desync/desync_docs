@@ -6,3 +6,4 @@ mkdocs-redirects
 mkdocs-minify-plugin
 mkdocs-static-i18n
 mkdocs-glightbox
+gunicorn
