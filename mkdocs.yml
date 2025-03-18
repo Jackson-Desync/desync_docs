@@ -1,0 +1,79 @@
+site_name: desync_search
+site_url: https://docs.desync.ai
+
+theme: 
+  name: material
+  font:
+    text: Merriweather-Sans
+    code: Red Hat Mono
+  logo: assets/logo-dark.svg
+  favicon: assets/square_logo.png
+
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: black
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: black
+      accent: deep purple
+
+nav:
+  - Introduction:
+      - Overview: pages/overview
+      - Create an API Key: pages/create_api_key
+      - Installation & Setup: pages/installation
+  - Getting Started:
+      - Quickstart: pages/quickstart
+  - API Reference:
+      - DesyncClient: api/desyncclient
+      - PageData: api/pagedata
+
+extra:
+  search:
+    placement: navbar
+  social:
+    - icon: material/login
+      link: https://beta.desync.ai
+      name: Sign Up
+  highlightjs: true
+  hljs_languages:
+    - python
+  custom_dir: overrides  # Enables custom navbar button
+
+# Custom 404 page
+not_found_page: 404.md
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.extra
+  - pymdownx.inlinehilite
+  - pymdownx.snippets  
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      auto_title: true  # Adds a title to copyable code blocks
+
+extra_css:
+  - assets/copy.css
+  - assets/logo.css
+
+extra_javascript:
+  - assets/copy.js
+
+plugins:
+  - search
+  - awesome-pages
+  - redirects
+  - minify:
+      minify_html: true
