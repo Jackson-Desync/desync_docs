@@ -21,6 +21,7 @@ def __init__(self, user_api_key="", developer_mode=False)
 Initializes the client with the provided API key or reads it from the `DESYNC_API_KEY` environment variable. If `developer_mode` is `True`, the client uses a test endpoint; otherwise, it uses the production endpoint.
 
 **Parameters:**
+
 - **user_api_key** *(str, optional)*: Your Desync API key.  
 - **developer_mode** *(bool, optional)*: Toggles between test and production endpoints.
 
@@ -50,6 +51,7 @@ def search(
 Performs a single search on a specified URL. Returns a `PageData` object containing the page’s text, links, timestamps, and other metadata.
 
 **Parameters:**
+
 - **url** *(str)*: The URL to scrape.  
 - **search_type** *(str)*: `"stealth_search"` (default, 10 credits) or `"test_search"` (1 credit).  
 - **scrape_full_html** *(bool)*: If `True`, returns the full HTML content.  
@@ -78,6 +80,7 @@ def bulk_search(
 Initiates an asynchronous bulk search on up to 1000 URLs at once. Returns a dictionary containing a `bulk_search_id` and other metadata.
 
 **Parameters:**
+
 - **target_list** *(list[str])*: List of URLs to process.  
 - **extract_html** *(bool)*: If `True`, includes the full HTML content in results.
 
@@ -106,6 +109,7 @@ def list_available(
 Retrieves minimal data about previously collected search results (IDs, domains, timestamps, etc.). Returns a list of `PageData` objects with limited fields.
 
 **Parameters:**
+
 - **url_list** *(list[str], optional)*: Filters results by specific URLs.  
 - **bulk_search_id** *(str, optional)*: Filters results by a particular bulk search ID.
 
@@ -187,6 +191,7 @@ def collect_results(
 Polls periodically for bulk search completion until a specified fraction of pages are done or a maximum wait time elapses, then retrieves full data. Returns a list of `PageData` objects.
 
 **Parameters:**
+
 - **bulk_search_id** *(str)*: The unique identifier for the bulk search.  
 - **target_links** *(list[str])*: The list of URLs in the bulk job.  
 - **wait_time** *(float)*: Maximum polling duration in seconds.  
@@ -222,6 +227,7 @@ def simple_bulk_search(
 Splits a large list of URLs into chunks (up to 1000 URLs each), initiates a bulk search for each chunk, then collects and aggregates the results.
 
 **Parameters:**
+
 - **target_list** *(list[str])*: URLs to be processed, possibly more than 1000.  
 - **extract_html** *(bool)*: If `True`, includes the full HTML content.  
 - **poll_interval** *(float)*: Polling interval in seconds.  
@@ -259,6 +265,7 @@ def crawl(
 Recursively crawls the specified `start_url` up to `max_depth` levels. Performs a stealth search on the start URL, collects same-domain links, and uses bulk searches to fetch pages at each depth.
 
 **Parameters:**
+
 - **start_url** *(str)*: Initial URL to crawl.  
 - **max_depth** *(int)*: Maximum crawl depth.  
 - **scrape_full_html** *(bool)*: If `True`, includes the full HTML.  

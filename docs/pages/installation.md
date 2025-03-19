@@ -59,4 +59,3 @@ Alternatively, you can pass a different API key directly:
 ```python
 client = DesyncClient(user_api_key="your_api_key_here")
 ```
-```

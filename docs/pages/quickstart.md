@@ -31,7 +31,7 @@ print("Text Content Length:", len(result.text_content))
 ## 2. Crawling an Entire Domain
 
 **What It Does:**  
-Recursively crawls a website. The starting page is "depth 0". Any link on that page (pointing to the same domain) is considered "depth 1", and links on depth 1 pages become "depth 2", and so on. This process continues until the maximum depth is reached or no new unique pages are found.
+Recursively crawls a website. The starting page is "depth 0". Any link on that page (that has the same domain) is considered "depth 1", and links on depth 1 pages become "depth 2", and so on. This process continues until the maximum depth is reached or no new unique pages are found.
 
 ```python
 from desync_search import DesyncClient
@@ -134,3 +134,4 @@ results = client.simple_bulk_search(
 print(f"Retrieved {len(results)} pages using simple_bulk_search.")
 for result in results:
     print("URL:", result.url)
+```

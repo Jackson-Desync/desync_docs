@@ -1,8 +1,10 @@
-site_name: desync_search
-site_url: https://docs.desync.ai
+site_name: Desync Search
+site_url: https://docs.desync.help
 
 theme: 
   name: material
+  features:
+    - navigation.expand
   font:
     text: Merriweather-Sans
     code: Red Hat Mono
@@ -47,7 +49,6 @@ extra:
   highlightjs: true
   hljs_languages:
     - python
-  custom_dir: overrides  # Enables custom navbar button
 
 markdown_extensions:
   - pymdownx.superfences
@@ -71,6 +72,5 @@ extra_javascript:
 plugins:
   - search
   - awesome-pages
-  - redirects
   - minify:
       minify_html: true

@@ -5,7 +5,7 @@ slug: create-api-key
 ---
 
 <p>
-  Head over to our webapp to generate an API key :) <br /><br />
+  Head over to our website to generate an API key :) <br /><br />
   <a href="https://beta.desync.ai/home" style="text-decoration: none;" target="_blank" ref="noreferrer">
     <button style="
       background-color: #007BFF;
@@ -13,9 +13,8 @@ slug: create-api-key
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      font-size: 1rem;
-      height: 2.5rem;
-      width: 9rem;
+      font-size: .8rem;
+      padding: .6rem;
       display: flex;
       align-items: center;
       justify-content: center;
