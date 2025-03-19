@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.desync.ai/api/desyncclient/</loc>
-         <lastmod>2025-03-18</lastmod>
+         <loc>https://docs.desync.help/</loc>
+         <lastmod>2025-03-19</lastmod>
     </url>
     <url>
-         <loc>https://docs.desync.ai/api/pagedata/</loc>
-         <lastmod>2025-03-18</lastmod>
+         <loc>https://docs.desync.help/api/desyncclient/</loc>
+         <lastmod>2025-03-19</lastmod>
     </url>
     <url>
-         <loc>https://docs.desync.ai/pages/create_api_key/</loc>
-         <lastmod>2025-03-18</lastmod>
+         <loc>https://docs.desync.help/api/pagedata/</loc>
+         <lastmod>2025-03-19</lastmod>
     </url>
     <url>
-         <loc>https://docs.desync.ai/pages/installation/</loc>
-         <lastmod>2025-03-18</lastmod>
+         <loc>https://docs.desync.help/pages/create_api_key/</loc>
+         <lastmod>2025-03-19</lastmod>
     </url>
     <url>
-         <loc>https://docs.desync.ai/pages/overview/</loc>
-         <lastmod>2025-03-18</lastmod>
+         <loc>https://docs.desync.help/pages/installation/</loc>
+         <lastmod>2025-03-19</lastmod>
     </url>
     <url>
-         <loc>https://docs.desync.ai/pages/quickstart/</loc>
-         <lastmod>2025-03-18</lastmod>
+         <loc>https://docs.desync.help/pages/overview/</loc>
+         <lastmod>2025-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.desync.help/pages/quickstart/</loc>
+         <lastmod>2025-03-19</lastmod>
     </url>
 </urlset>
